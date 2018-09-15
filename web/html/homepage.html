@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>监管知识图谱</title>
+    <link rel="stylesheet" href="../scss/jquery-ui.structure.css">
+    <link rel="stylesheet" href="../scss/style.css">
+</head>
+
+<body>
+    <div id="homepage">
+        <header>
+            <img src="../images/logo.png" alt="logo" class="logo">
+            <p class="name">监管知识图谱</p>
+        </header>
+        <div class="search-container">
+            <input type="text" class="date-picker" id="startDate">
+            <div class="line">-</div>
+            <input type="text" class="date-picker" id="endDate">
+            <div class="select-container">
+                <div class="selected">账户名称</div>
+                <ul class="select">
+                    <li>账户名称</li>
+                    <li>账户编码</li>
+                    <li>证券名称</li>
+                    <li>证券编码</li>
+                    <li>调查单编号</li>
+                    <li>会员名称</li>
+                    <li>会员营业部</li>
+                </ul>
+            </div>
+            <input class="search-input" type="text" placeholder="请输入证券代码及名称、调查单编号、会员名称" />
+            <button class="confirm">确定</button>
+        </div>
+        <div class="chart-container" style="width: 100%;">
+            <div id="main" style="min-width:680px;width: 80vw;height:80vh;"></div>
+        </div>
+        <div class="details-container">
+            <button id="clear">清空</button>
+            <button id="deleteAll">移除多项</button>
+            <div class="content"></div>
+        </div>
+        <div id="toast"></div>
+    </div>
+    <script src="../js/jquery.1.7.2.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/echarts.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

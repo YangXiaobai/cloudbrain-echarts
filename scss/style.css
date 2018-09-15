@@ -1,125 +1,23 @@
-html,
-body {
-  background: #0D111A;
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-  min-width: 980px; }
+/*
+Errno::ENOENT: No such file or directory @ rb_sysopen - style.scss
 
-#homepage header {
-  height: 92px;
-  line-height: 92px;
-  padding: 0 50px;
-  width: 100%; }
-  #homepage header .logo {
-    float: left;
-    height: 52px;
-    margin: 20px 30px 20px 0; }
-  #homepage header .name {
-    color: #FFF;
-    float: left;
-    font-size: 1.5rem;
-    height: 40px;
-    line-height: 40px;
-    margin: 26px 0 0 0;
-    padding-left: 30px;
-    border-left: 1px solid #FFF; }
-#homepage .search-container {
-  background: #121824;
-  height: 58px;
-  line-height: 58px;
-  width: 100%; }
-  #homepage .search-container .date-picker {
-    height: 32px;
-    line-height: 32px;
-    width: 116px;
-    background: #0B0F18;
-    color: #6F7D9A;
-    float: left;
-    font-size: .75rem; }
-    #homepage .search-container .date-picker:before {
-      content: '';
-      height: 18px;
-      width: 18px;
-      background: url("../images/calendar.png") no-repeat center;
-      background-size: contain;
-      display: inline-block;
-      margin: 0px 8px -4px 10px; }
-    #homepage .search-container .date-picker:first-of-type {
-      margin: 13px 15px 0 50px; }
-    #homepage .search-container .date-picker:last-of-type {
-      margin: 13px 0 0 15px; }
-  #homepage .search-container .line {
-    float: left;
-    color: #6F7D9A; }
-  #homepage .search-container .search-input {
-    color: #6F7D9A;
-    font-size: .75rem;
-    height: 32px;
-    line-height: 32px;
-    width: 440px;
-    float: left;
-    background: #0B0F18;
-    border: 0;
-    margin: 13px 0 0 40px;
-    padding: 0 12px; }
-    #homepage .search-container .search-input:focus {
-      outline: none; }
-    #homepage .search-container .search-input::-moz-placeholder {
-      color: #6F7D9A; }
-    #homepage .search-container .search-input::-webkit-input-placeholder {
-      color: #6F7D9A; }
-    #homepage .search-container .search-input:-ms-input-placeholder {
-      color: #6F7D9A; }
-  #homepage .search-container .confirm {
-    height: 32px;
-    line-height: 32px;
-    width: 68px;
-    text-align: center;
-    color: #FFF;
-    font-size: .75rem;
-    background: #1E53C3;
-    border: 0;
-    border-radius: 4px;
-    margin-left: 12px;
-    cursor: pointer; }
-#homepage .popup {
-  width: 280px;
-  height: auto;
-  border-radius: 10px;
-  color: #FFF; }
-  #homepage .popup .name {
-    background: #182744;
-    height: 44px;
-    line-height: 44px;
-    text-align: center;
-    margin: 0;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px; }
-  #homepage .popup .body {
-    padding: 20px;
-    background: #1F3051;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    font-size: .875rem; }
-    #homepage .popup .body .item + .item {
-      margin-top: 20px; }
-    #homepage .popup .body .title {
-      margin: 0;
-      position: relative;
-      padding-left: 20px; }
-      #homepage .popup .body .title:before {
-        content: "";
-        height: 8px;
-        width: 8px;
-        border-radius: 50%;
-        background: #1E53C3;
-        position: absolute;
-        left: 0;
-        top: 6px; }
-    #homepage .popup .body .desc {
-      margin: 8px 0 0 0;
-      width: 100%;
-      word-break: break-all; }
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+/Users/apple/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:454:in `read'
+/Users/apple/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:454:in `update_stylesheet'
+/Users/apple/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/apple/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/apple/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/apple/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:294:in `watch'
+/Users/apple/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin.rb:109:in `method_missing'
+/Users/apple/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/exec/sass_scss.rb:360:in `watch_or_update'
+/Users/apple/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Users/apple/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/exec/base.rb:52:in `parse'
+/Users/apple/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/exec/base.rb:19:in `parse!'
+/Users/apple/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/sass-3.5.3/bin/sass:13:in `<top (required)>'
+/Users/apple/.rbenv/versions/2.4.2/bin/sass:23:in `load'
+/Users/apple/.rbenv/versions/2.4.2/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Errno::ENOENT: No such file or directory @ rb_sysopen - style.scss"; }

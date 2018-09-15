@@ -1,0 +1,39 @@
+version: "3.3"
+services:
+  neo4j:
+    image: neo4j:3.4
+    ports:
+      - target: 7474
+        published: 7474
+      - target: 7687
+        published: 7687
+    environment:
+      - NEO4J_ACCEPT_LICENSE_AGREEMENT=yes
+    volumes:
+      - /var/data/sse/kgraph/neo4j/data:/data:rw
+      - /var/data/sse/kgraph/neo4j/logs:/logs:rw
+    deploy:
+      replicas: 1
+      placement:
+        constraints:
+          - node.labels.cbr.app==true
+  kgraph:
+    image: deepro.io/sse/kgraph:1.0.0
+    configs:
+      - source: site.conf
+        target: /etc/nginx/conf.d/site.conf
+    volumes:
+      - /var/data/sse/kgraph/web:/data:rw
+    ports:
+      - target: 3455
+        published: 3455
+        mode: host
+    deploy:
+      mode: global
+      placement:
+        constraints:
+          - node.labels.cbr.app==true
+
+configs:
+  site.conf:
+    file: kgraph.conf
